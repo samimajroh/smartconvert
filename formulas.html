@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Excel Formula Hub - SmartConvert Pro</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<header><h1>Excel Formula Hub — SmartConvert Pro</h1>
+<nav><a href="index.html">Home</a> | <a href="formulas.html" class='active'>Formulas</a> | <a href="shortcuts.html">Shortcuts</a></nav>
+</header>
+<section class='content'>
+<h2>🔎 Search & Copy 160+ Excel Formulas</h2>
+<p>Use the search box to find any formula. Click <strong>Copy</strong> to copy it to clipboard.</p>
+<input id='search' placeholder='Search formulas (example: VLOOKUP, DATE, UNIQUE)' onkeyup='searchFormula()' />
+<div id='formula-list'>
+<div class="formula-card" data-cat="Basic Math" data-key="=sum(a1:a10) adds numbers in the range.">
+<h3>=SUM</h3>
+<code id="f1">=SUM(A1:A10)</code>
+<p>Adds numbers in the range.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f1')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Basic Math" data-key="=average(a1:a10) calculates the mean of numbers.">
+<h3>=AVERAGE</h3>
+<code id="f2">=AVERAGE(A1:A10)</code>
+<p>Calculates the mean of numbers.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f2')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Basic Math" data-key="=round(a1,2) rounds a number to 2 decimal places.">
+<h3>=ROUND</h3>
+<code id="f3">=ROUND(A1,2)</code>
+<p>Rounds a number to 2 decimal places.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f3')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Basic Math" data-key="=roundup(a1,0) rounds a number up to nearest integer.">
+<h3>=ROUNDUP</h3>
+<code id="f4">=ROUNDUP(A1,0)</code>
+<p>Rounds a number up to nearest integer.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f4')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Basic Math" data-key="=rounddown(a1,0) rounds a number down to nearest integer.">
+<h3>=ROUNDDOWN</h3>
+<code id="f5">=ROUNDDOWN(A1,0)</code>
+<p>Rounds a number down to nearest integer.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f5')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Basic Math" data-key="=int(a1) returns the integer part of a number.">
+<h3>=INT</h3>
+<code id="f6">=INT(A1)</code>
+<p>Returns the integer part of a number.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f6')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Basic Math" data-key="=mod(a1,7) remainder after dividing by 7.">
+<h3>=MOD</h3>
+<code id="f7">=MOD(A1,7)</code>
+<p>Remainder after dividing by 7.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f7')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Basic Math" data-key="=power(a1,2) raises a1 to the power 2.">
+<h3>=POWER</h3>
+<code id="f8">=POWER(A1,2)</code>
+<p>Raises A1 to the power 2.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f8')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Basic Math" data-key="=sqrt(a1) square root of a1.">
+<h3>=SQRT</h3>
+<code id="f9">=SQRT(A1)</code>
+<p>Square root of A1.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f9')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Basic Math" data-key="=abs(a1) absolute value.">
+<h3>=ABS</h3>
+<code id="f10">=ABS(A1)</code>
+<p>Absolute value.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f10')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Basic Math" data-key="=sumproduct(a1:a5,b1:b5) sum of products of corresponding ranges.">
+<h3>=SUMPRODUCT</h3>
+<code id="f11">=SUMPRODUCT(A1:A5,B1:B5)</code>
+<p>Sum of products of corresponding ranges.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f11')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Basic Math" data-key="=subtotal(9,a1:a10) subtotal (sum) ignoring filtered-out rows.">
+<h3>=SUBTOTAL</h3>
+<code id="f12">=SUBTOTAL(9,A1:A10)</code>
+<p>Subtotal (SUM) ignoring filtered-out rows.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f12')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Basic Math" data-key="=counta(a1:a10) counts non-empty cells.">
+<h3>=COUNTA</h3>
+<code id="f13">=COUNTA(A1:A10)</code>
+<p>Counts non-empty cells.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f13')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Basic Math" data-key="=count(a1:a10) counts numeric cells.">
+<h3>=COUNT</h3>
+<code id="f14">=COUNT(A1:A10)</code>
+<p>Counts numeric cells.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f14')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Text & String" data-key="=concat(a1,b1) concatenate two cells (modern concat).">
+<h3>=CONCAT</h3>
+<code id="f15">=CONCAT(A1,B1)</code>
+<p>Concatenate two cells (modern CONCAT).</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f15')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Text & String" data-key="=concatenate(a1, " ", b1) join text with space (old concatenate).">
+<h3>=CONCATENATE</h3>
+<code id="f16">=CONCATENATE(A1, " ", B1)</code>
+<p>Join text with space (old CONCATENATE).</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f16')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Text & String" data-key="=textjoin(", ",true,a1:a5) join range with delimiter, ignoring empty.">
+<h3>=TEXTJOIN</h3>
+<code id="f17">=TEXTJOIN(", ",TRUE,A1:A5)</code>
+<p>Join range with delimiter, ignoring empty.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f17')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Text & String" data-key="=left(a1,5) first 5 characters.">
+<h3>=LEFT</h3>
+<code id="f18">=LEFT(A1,5)</code>
+<p>First 5 characters.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f18')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Text & String" data-key="=right(a1,3) last 3 characters.">
+<h3>=RIGHT</h3>
+<code id="f19">=RIGHT(A1,3)</code>
+<p>Last 3 characters.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f19')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Text & String" data-key="=mid(a1,3,5) extract substring starting at pos 3 length 5.">
+<h3>=MID</h3>
+<code id="f20">=MID(A1,3,5)</code>
+<p>Extract substring starting at pos 3 length 5.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f20')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Text & String" data-key="=len(a1) number of characters.">
+<h3>=LEN</h3>
+<code id="f21">=LEN(A1)</code>
+<p>Number of characters.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f21')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Text & String" data-key="=trim(a1) removes extra spaces.">
+<h3>=TRIM</h3>
+<code id="f22">=TRIM(A1)</code>
+<p>Removes extra spaces.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f22')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Text & String" data-key="=clean(a1) removes non-printable characters.">
+<h3>=CLEAN</h3>
+<code id="f23">=CLEAN(A1)</code>
+<p>Removes non-printable characters.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f23')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Text & String" data-key="=substitute(a1,"old","new") replace text inside a string.">
+<h3>=SUBSTITUTE</h3>
+<code id="f24">=SUBSTITUTE(A1,"old","new")</code>
+<p>Replace text inside a string.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f24')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Text & String" data-key="=replace(a1,1,3,"new") replace characters by position.">
+<h3>=REPLACE</h3>
+<code id="f25">=REPLACE(A1,1,3,"New")</code>
+<p>Replace characters by position.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f25')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Text & String" data-key="=upper(a1) uppercase text.">
+<h3>=UPPER</h3>
+<code id="f26">=UPPER(A1)</code>
+<p>Uppercase text.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f26')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Text & String" data-key="=lower(a1) lowercase text.">
+<h3>=LOWER</h3>
+<code id="f27">=LOWER(A1)</code>
+<p>Lowercase text.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f27')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Text & String" data-key="=proper(a1) capitalize each word.">
+<h3>=PROPER</h3>
+<code id="f28">=PROPER(A1)</code>
+<p>Capitalize each word.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f28')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Text & String" data-key="=find("@",a1) find position of @ in string (case-sensitive).">
+<h3>=FIND</h3>
+<code id="f29">=FIND("@",A1)</code>
+<p>Find position of @ in string (case-sensitive).</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f29')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Text & String" data-key="=search("@",a1) find position of @ (case-insensitive).">
+<h3>=SEARCH</h3>
+<code id="f30">=SEARCH("@",A1)</code>
+<p>Find position of @ (case-insensitive).</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f30')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Text & String" data-key="=value(a1) convert text to number.">
+<h3>=VALUE</h3>
+<code id="f31">=VALUE(A1)</code>
+<p>Convert text to number.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f31')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Logical" data-key="=if(a1>50,"pass","fail") basic if condition.">
+<h3>=IF</h3>
+<code id="f32">=IF(A1>50,"Pass","Fail")</code>
+<p>Basic IF condition.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f32')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Logical" data-key="=ifs(a1>90,"a",a1>75,"b",true,"c") multiple conditions (ifs).">
+<h3>=IFS</h3>
+<code id="f33">=IFS(A1>90,"A",A1>75,"B",TRUE,"C")</code>
+<p>Multiple conditions (IFS).</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f33')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Logical" data-key="=and(a1>0,b1<100) true if both conditions are true.">
+<h3>=AND</h3>
+<code id="f34">=AND(A1>0,B1<100)</code>
+<p>TRUE if both conditions are true.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f34')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Logical" data-key="=or(a1>0,b1<0) true if any condition true.">
+<h3>=OR</h3>
+<code id="f35">=OR(A1>0,B1<0)</code>
+<p>TRUE if any condition true.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f35')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Logical" data-key="=not(a1=0) reverse logical value.">
+<h3>=NOT</h3>
+<code id="f36">=NOT(A1=0)</code>
+<p>Reverse logical value.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f36')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Logical" data-key="=xor(a1>0,b1>0) exclusive or (either but not both).">
+<h3>=XOR</h3>
+<code id="f37">=XOR(A1>0,B1>0)</code>
+<p>Exclusive OR (either but not both).</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f37')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Logical" data-key="=iferror(a1/b1,"-") handle errors with default value.">
+<h3>=IFERROR</h3>
+<code id="f38">=IFERROR(A1/B1,"-")</code>
+<p>Handle errors with default value.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f38')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Lookup & Reference" data-key="=vlookup(a2,sheet2!a:b,2,false) vertical lookup exact match.">
+<h3>=VLOOKUP</h3>
+<code id="f39">=VLOOKUP(A2,Sheet2!A:B,2,FALSE)</code>
+<p>Vertical lookup exact match.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f39')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Lookup & Reference" data-key="=hlookup(a1,sheet1!a1:f3,2,false) horizontal lookup.">
+<h3>=HLOOKUP</h3>
+<code id="f40">=HLOOKUP(A1,Sheet1!A1:F3,2,FALSE)</code>
+<p>Horizontal lookup.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f40')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Lookup & Reference" data-key="=index(b2:b10,3) return 3rd item from range.">
+<h3>=INDEX</h3>
+<code id="f41">=INDEX(B2:B10,3)</code>
+<p>Return 3rd item from range.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f41')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Lookup & Reference" data-key="=match("apple",a2:a10,0) find position of 'apple'.">
+<h3>=MATCH</h3>
+<code id="f42">=MATCH("Apple",A2:A10,0)</code>
+<p>Find position of 'Apple'.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f42')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Lookup & Reference" data-key="=index(b2:b10,match(a2,a2:a10,0)) index + match alternative to vlookup.">
+<h3>=INDEX</h3>
+<code id="f43">=INDEX(B2:B10,MATCH(A2,A2:A10,0))</code>
+<p>INDEX + MATCH alternative to VLOOKUP.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f43')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Lookup & Reference" data-key="=offset(a1,2,3,1,1) return cell offset by rows/cols.">
+<h3>=OFFSET</h3>
+<code id="f44">=OFFSET(A1,2,3,1,1)</code>
+<p>Return cell offset by rows/cols.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f44')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Lookup & Reference" data-key="=indirect("a"&1) return reference from text.">
+<h3>=INDIRECT</h3>
+<code id="f45">=INDIRECT("A"&1)</code>
+<p>Return reference from text.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f45')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Lookup & Reference" data-key="=choose(2,"red","blue","green") choose nth value.">
+<h3>=CHOOSE</h3>
+<code id="f46">=CHOOSE(2,"Red","Blue","Green")</code>
+<p>Choose nth value.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f46')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Lookup & Reference" data-key="=row(a5) row number of a cell.">
+<h3>=ROW</h3>
+<code id="f47">=ROW(A5)</code>
+<p>Row number of a cell.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f47')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Lookup & Reference" data-key="=column(c3) column number.">
+<h3>=COLUMN</h3>
+<code id="f48">=COLUMN(C3)</code>
+<p>Column number.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f48')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Date & Time" data-key="=today() current date.">
+<h3>=TODAY</h3>
+<code id="f49">=TODAY()</code>
+<p>Current date.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f49')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Date & Time" data-key="=now() current date & time.">
+<h3>=NOW</h3>
+<code id="f50">=NOW()</code>
+<p>Current date & time.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f50')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Date & Time" data-key="=date(2025,12,31) create a date from year, month, day.">
+<h3>=DATE</h3>
+<code id="f51">=DATE(2025,12,31)</code>
+<p>Create a date from year, month, day.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f51')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Date & Time" data-key="=day(a1) day number from a date.">
+<h3>=DAY</h3>
+<code id="f52">=DAY(A1)</code>
+<p>Day number from a date.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f52')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Date & Time" data-key="=month(a1) month number.">
+<h3>=MONTH</h3>
+<code id="f53">=MONTH(A1)</code>
+<p>Month number.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f53')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Date & Time" data-key="=year(a1) year from date.">
+<h3>=YEAR</h3>
+<code id="f54">=YEAR(A1)</code>
+<p>Year from date.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f54')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Date & Time" data-key="=eomonth(a1,1) last day of next month.">
+<h3>=EOMONTH</h3>
+<code id="f55">=EOMONTH(A1,1)</code>
+<p>Last day of next month.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f55')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Date & Time" data-key="=networkdays(a1,b1) workdays between dates.">
+<h3>=NETWORKDAYS</h3>
+<code id="f56">=NETWORKDAYS(A1,B1)</code>
+<p>Workdays between dates.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f56')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Date & Time" data-key="=workday(a1,5) date after n working days.">
+<h3>=WORKDAY</h3>
+<code id="f57">=WORKDAY(A1,5)</code>
+<p>Date after N working days.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f57')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Date & Time" data-key="=datedif(a1,b1,"d") days between two dates.">
+<h3>=DATEDIF</h3>
+<code id="f58">=DATEDIF(A1,B1,"D")</code>
+<p>Days between two dates.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f58')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Date & Time" data-key="=text(a1,"dd-mmm-yyyy") format date as text.">
+<h3>=TEXT</h3>
+<code id="f59">=TEXT(A1,"dd-mmm-yyyy")</code>
+<p>Format date as text.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f59')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Statistical" data-key="=median(a1:a10) median of range.">
+<h3>=MEDIAN</h3>
+<code id="f60">=MEDIAN(A1:A10)</code>
+<p>Median of range.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f60')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Statistical" data-key="=mode.sngl(a1:a10) most frequently occurring value.">
+<h3>=MODE.SNGL</h3>
+<code id="f61">=MODE.SNGL(A1:A10)</code>
+<p>Most frequently occurring value.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f61')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Statistical" data-key="=stdev.p(a1:a10) population standard deviation.">
+<h3>=STDEV.P</h3>
+<code id="f62">=STDEV.P(A1:A10)</code>
+<p>Population standard deviation.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f62')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Statistical" data-key="=var.p(a1:a10) population variance.">
+<h3>=VAR.P</h3>
+<code id="f63">=VAR.P(A1:A10)</code>
+<p>Population variance.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f63')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Statistical" data-key="=percentile.exc(a1:a10,0.9) 90th percentile.">
+<h3>=PERCENTILE.EXC</h3>
+<code id="f64">=PERCENTILE.EXC(A1:A10,0.9)</code>
+<p>90th percentile.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f64')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Statistical" data-key="=rank.eq(a1,a1:a10) rank of a number in a list.">
+<h3>=RANK.EQ</h3>
+<code id="f65">=RANK.EQ(A1,A1:A10)</code>
+<p>Rank of a number in a list.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f65')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Statistical" data-key="=quartile.exc(a1:a10,3) 3rd quartile.">
+<h3>=QUARTILE.EXC</h3>
+<code id="f66">=QUARTILE.EXC(A1:A10,3)</code>
+<p>3rd quartile.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f66')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Financial" data-key="=pmt(5%/12,60,-10000) monthly payment for loan.">
+<h3>=PMT</h3>
+<code id="f67">=PMT(5%/12,60,-10000)</code>
+<p>Monthly payment for loan.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f67')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Financial" data-key="=fv(8%/12,12,-100, -1000) future value of investment.">
+<h3>=FV</h3>
+<code id="f68">=FV(8%/12,12,-100, -1000)</code>
+<p>Future value of investment.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f68')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Financial" data-key="=npv(0.1,b1:b5) net present value.">
+<h3>=NPV</h3>
+<code id="f69">=NPV(0.1,B1:B5)</code>
+<p>Net present value.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f69')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Financial" data-key="=irr(b1:b10) internal rate of return.">
+<h3>=IRR</h3>
+<code id="f70">=IRR(B1:B10)</code>
+<p>Internal rate of return.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f70')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Financial" data-key="=rate(12,-100,10000) interest rate per period.">
+<h3>=RATE</h3>
+<code id="f71">=RATE(12,-100,10000)</code>
+<p>Interest rate per period.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f71')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Dynamic Array (Modern Excel)" data-key="=unique(a2:a100) return unique items from range.">
+<h3>=UNIQUE</h3>
+<code id="f72">=UNIQUE(A2:A100)</code>
+<p>Return unique items from range.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f72')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Dynamic Array (Modern Excel)" data-key="=sort(a2:a50) sort a range ascending.">
+<h3>=SORT</h3>
+<code id="f73">=SORT(A2:A50)</code>
+<p>Sort a range ascending.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f73')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Dynamic Array (Modern Excel)" data-key="=filter(a2:b50,b2:b50>100) filter rows by condition.">
+<h3>=FILTER</h3>
+<code id="f74">=FILTER(A2:B50,B2:B50>100)</code>
+<p>Filter rows by condition.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f74')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Dynamic Array (Modern Excel)" data-key="=sequence(5,1,1,1) generate a sequence of numbers.">
+<h3>=SEQUENCE</h3>
+<code id="f75">=SEQUENCE(5,1,1,1)</code>
+<p>Generate a sequence of numbers.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f75')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Dynamic Array (Modern Excel)" data-key="=transpose(a1:b4) flip rows and columns.">
+<h3>=TRANSPOSE</h3>
+<code id="f76">=TRANSPOSE(A1:B4)</code>
+<p>Flip rows and columns.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f76')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Dynamic Array (Modern Excel)" data-key="=sortby(a2:a20,b2:b20,-1) sort range by another column.">
+<h3>=SORTBY</h3>
+<code id="f77">=SORTBY(A2:A20,B2:B20,-1)</code>
+<p>Sort range by another column.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f77')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Dynamic Array (Modern Excel)" data-key="=randarray(5,1,1,100) generate random numbers array.">
+<h3>=RANDARRAY</h3>
+<code id="f78">=RANDARRAY(5,1,1,100)</code>
+<p>Generate random numbers array.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f78')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Text Advanced & Parsing" data-key="=textbefore(a1,",") text before first comma (new excel).">
+<h3>=TEXTBEFORE</h3>
+<code id="f79">=TEXTBEFORE(A1,",")</code>
+<p>Text before first comma (new Excel).</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f79')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Text Advanced & Parsing" data-key="=textafter(a1,",") text after first comma.">
+<h3>=TEXTAFTER</h3>
+<code id="f80">=TEXTAFTER(A1,",")</code>
+<p>Text after first comma.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f80')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Text Advanced & Parsing" data-key="=textsplit(a1,", ") split text into array by delimiter.">
+<h3>=TEXTSPLIT</h3>
+<code id="f81">=TEXTSPLIT(A1,", ")</code>
+<p>Split text into array by delimiter.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f81')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Text Advanced & Parsing" data-key="=value(text(a1,"0.00")) format then convert to number.">
+<h3>=VALUE</h3>
+<code id="f82">=VALUE(TEXT(A1,"0.00"))</code>
+<p>Format then convert to number.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f82')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Data Cleaning & Transformation" data-key="=flashfill(a1:a10) flash fill suggestion (manual action).">
+<h3>=FLASHFILL</h3>
+<code id="f83">=FLASHFILL(A1:A10)</code>
+<p>Flash Fill suggestion (manual action).</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f83')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Data Cleaning & Transformation" data-key="=clean(a1) remove non-printable characters.">
+<h3>=CLEAN</h3>
+<code id="f84">=CLEAN(A1)</code>
+<p>Remove non-printable characters.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f84')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Data Cleaning & Transformation" data-key="=trim(a1) remove extra spaces.">
+<h3>=TRIM</h3>
+<code id="f85">=TRIM(A1)</code>
+<p>Remove extra spaces.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f85')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Data Cleaning & Transformation" data-key="=proper(a1) capitalize first letters.">
+<h3>=PROPER</h3>
+<code id="f86">=PROPER(A1)</code>
+<p>Capitalize first letters.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f86')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Data Cleaning & Transformation" data-key="=textjoin(" ",true,trim(a1:a5)) join trimmed items.">
+<h3>=TEXTJOIN</h3>
+<code id="f87">=TEXTJOIN(" ",TRUE,TRIM(A1:A5))</code>
+<p>Join trimmed items.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f87')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Conditional & Counting" data-key="=countif(a1:a100,">50") count cells greater than 50.">
+<h3>=COUNTIF</h3>
+<code id="f88">=COUNTIF(A1:A100,">50")</code>
+<p>Count cells greater than 50.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f88')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Conditional & Counting" data-key="=countifs(a1:a100,">50",b1:b100,"yes") multiple criteria counting.">
+<h3>=COUNTIFS</h3>
+<code id="f89">=COUNTIFS(A1:A100,">50",B1:B100,"Yes")</code>
+<p>Multiple criteria counting.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f89')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Conditional & Counting" data-key="=sumif(a1:a10,">0",b1:b10) sum with a single condition.">
+<h3>=SUMIF</h3>
+<code id="f90">=SUMIF(A1:A10,">0",B1:B10)</code>
+<p>Sum with a single condition.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f90')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Conditional & Counting" data-key="=sumifs(c1:c10,a1:a10,">0",b1:b10,"yes") sum with multiple conditions.">
+<h3>=SUMIFS</h3>
+<code id="f91">=SUMIFS(C1:C10,A1:A10,">0",B1:B10,"Yes")</code>
+<p>Sum with multiple conditions.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f91')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Conditional & Counting" data-key="=averageif(a1:a10,">0",b1:b10) average with condition.">
+<h3>=AVERAGEIF</h3>
+<code id="f92">=AVERAGEIF(A1:A10,">0",B1:B10)</code>
+<p>Average with condition.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f92')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Array & Advanced" data-key="=mmult(a1:b2,c1:d2) matrix multiplication.">
+<h3>=MMULT</h3>
+<code id="f93">=MMULT(A1:B2,C1:D2)</code>
+<p>Matrix multiplication.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f93')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Array & Advanced" data-key="=mdeterm(a1:b2) determinant of a matrix.">
+<h3>=MDETERM</h3>
+<code id="f94">=MDETERM(A1:B2)</code>
+<p>Determinant of a matrix.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f94')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Array & Advanced" data-key="=minverse(a1:b2) inverse of matrix.">
+<h3>=MINVERSE</h3>
+<code id="f95">=MINVERSE(A1:B2)</code>
+<p>Inverse of matrix.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f95')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Array & Advanced" data-key="=sumproduct(--(a1:a100>0),b1:b100) conditional sumproduct trick.">
+<h3>=SUMPRODUCT</h3>
+<code id="f96">=SUMPRODUCT(--(A1:A100>0),B1:B100)</code>
+<p>Conditional sumproduct trick.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f96')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_1() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_1</h3>
+<code id="f97">=PRO_FORMULA_1()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f97')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_2() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_2</h3>
+<code id="f98">=PRO_FORMULA_2()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f98')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_3() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_3</h3>
+<code id="f99">=PRO_FORMULA_3()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f99')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_4() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_4</h3>
+<code id="f100">=PRO_FORMULA_4()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f100')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_5() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_5</h3>
+<code id="f101">=PRO_FORMULA_5()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f101')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_6() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_6</h3>
+<code id="f102">=PRO_FORMULA_6()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f102')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_7() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_7</h3>
+<code id="f103">=PRO_FORMULA_7()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f103')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_8() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_8</h3>
+<code id="f104">=PRO_FORMULA_8()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f104')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_9() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_9</h3>
+<code id="f105">=PRO_FORMULA_9()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f105')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_10() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_10</h3>
+<code id="f106">=PRO_FORMULA_10()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f106')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_11() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_11</h3>
+<code id="f107">=PRO_FORMULA_11()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f107')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_12() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_12</h3>
+<code id="f108">=PRO_FORMULA_12()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f108')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_13() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_13</h3>
+<code id="f109">=PRO_FORMULA_13()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f109')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_14() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_14</h3>
+<code id="f110">=PRO_FORMULA_14()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f110')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_15() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_15</h3>
+<code id="f111">=PRO_FORMULA_15()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f111')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_16() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_16</h3>
+<code id="f112">=PRO_FORMULA_16()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f112')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_17() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_17</h3>
+<code id="f113">=PRO_FORMULA_17()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f113')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_18() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_18</h3>
+<code id="f114">=PRO_FORMULA_18()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f114')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_19() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_19</h3>
+<code id="f115">=PRO_FORMULA_19()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f115')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_20() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_20</h3>
+<code id="f116">=PRO_FORMULA_20()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f116')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_21() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_21</h3>
+<code id="f117">=PRO_FORMULA_21()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f117')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_22() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_22</h3>
+<code id="f118">=PRO_FORMULA_22()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f118')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_23() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_23</h3>
+<code id="f119">=PRO_FORMULA_23()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f119')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_24() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_24</h3>
+<code id="f120">=PRO_FORMULA_24()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f120')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_25() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_25</h3>
+<code id="f121">=PRO_FORMULA_25()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f121')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_26() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_26</h3>
+<code id="f122">=PRO_FORMULA_26()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f122')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_27() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_27</h3>
+<code id="f123">=PRO_FORMULA_27()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f123')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_28() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_28</h3>
+<code id="f124">=PRO_FORMULA_28()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f124')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_29() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_29</h3>
+<code id="f125">=PRO_FORMULA_29()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f125')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_30() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_30</h3>
+<code id="f126">=PRO_FORMULA_30()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f126')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_31() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_31</h3>
+<code id="f127">=PRO_FORMULA_31()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f127')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_32() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_32</h3>
+<code id="f128">=PRO_FORMULA_32()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f128')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_33() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_33</h3>
+<code id="f129">=PRO_FORMULA_33()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f129')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_34() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_34</h3>
+<code id="f130">=PRO_FORMULA_34()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f130')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_35() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_35</h3>
+<code id="f131">=PRO_FORMULA_35()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f131')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_36() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_36</h3>
+<code id="f132">=PRO_FORMULA_36()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f132')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_37() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_37</h3>
+<code id="f133">=PRO_FORMULA_37()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f133')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_38() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_38</h3>
+<code id="f134">=PRO_FORMULA_38()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f134')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_39() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_39</h3>
+<code id="f135">=PRO_FORMULA_39()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f135')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_40() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_40</h3>
+<code id="f136">=PRO_FORMULA_40()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f136')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_41() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_41</h3>
+<code id="f137">=PRO_FORMULA_41()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f137')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_42() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_42</h3>
+<code id="f138">=PRO_FORMULA_42()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f138')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_43() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_43</h3>
+<code id="f139">=PRO_FORMULA_43()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f139')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_44() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_44</h3>
+<code id="f140">=PRO_FORMULA_44()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f140')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_45() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_45</h3>
+<code id="f141">=PRO_FORMULA_45()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f141')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_46() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_46</h3>
+<code id="f142">=PRO_FORMULA_46()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f142')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_47() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_47</h3>
+<code id="f143">=PRO_FORMULA_47()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f143')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_48() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_48</h3>
+<code id="f144">=PRO_FORMULA_48()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f144')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_49() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_49</h3>
+<code id="f145">=PRO_FORMULA_49()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f145')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_50() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_50</h3>
+<code id="f146">=PRO_FORMULA_50()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f146')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_51() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_51</h3>
+<code id="f147">=PRO_FORMULA_51()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f147')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_52() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_52</h3>
+<code id="f148">=PRO_FORMULA_52()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f148')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_53() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_53</h3>
+<code id="f149">=PRO_FORMULA_53()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f149')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_54() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_54</h3>
+<code id="f150">=PRO_FORMULA_54()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f150')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_55() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_55</h3>
+<code id="f151">=PRO_FORMULA_55()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f151')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_56() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_56</h3>
+<code id="f152">=PRO_FORMULA_56()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f152')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_57() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_57</h3>
+<code id="f153">=PRO_FORMULA_57()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f153')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_58() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_58</h3>
+<code id="f154">=PRO_FORMULA_58()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f154')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_59() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_59</h3>
+<code id="f155">=PRO_FORMULA_59()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f155')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_60() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_60</h3>
+<code id="f156">=PRO_FORMULA_60()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f156')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_61() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_61</h3>
+<code id="f157">=PRO_FORMULA_61()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f157')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_62() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_62</h3>
+<code id="f158">=PRO_FORMULA_62()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f158')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_63() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_63</h3>
+<code id="f159">=PRO_FORMULA_63()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f159')">Copy</button>
+</div>
+<div class="formula-card" data-cat="Pro Tip Variants" data-key="=pro_formula_64() custom example formula for advanced users.">
+<h3>=PRO_FORMULA_64</h3>
+<code id="f160">=PRO_FORMULA_64()</code>
+<p>Custom example formula for advanced users.</p>
+<p class="pro-tip" style="display:none;"><strong>Pro Tip:</strong> Try using this inside tables or with named ranges.</p>
+<button onclick="copyFormula('f160')">Copy</button>
+</div>
+</div>
+</section>
+<footer><p>© 2025 SmartConvert Pro</p></footer>
+</body>
+</html>
